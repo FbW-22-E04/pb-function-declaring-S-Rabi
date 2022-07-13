@@ -2,24 +2,35 @@ function multiple(a, b) {
   console.log(a * b);
 }
 multiple(2, 3);
+// or we can use return
+function multiple(a, b) {
+  return a * b;
+}
+console.log(2, 3);
+
 // 2:
 let storeValue = function (a, b) {
   return a * b;
 };
 console.log(storeValue(5, 2));
 // 3:
-let arrowValues = (a, b) => a * b;
+const arrroValue = () => {}; // arrow function structure
+//
+let arrowValues = (a, b) => {
+  return a * b;
+};
 console.log(arrowValues(3, 3));
 // 4:
 function multiple(a, b) {
-  console.log(a / b);
+  console.log(a % b);
 }
-multiple(2, 3);
+multiple(9, 5);
 //-----------------------//
 let storeValue4 = function (a, b) {
-  return a / b;
+  console.log(a % b);
 };
-console.log(storeValue4(5, 2));
+storeValue4(8, 5);
 //-----------------------//
-let arrowValues4 = (a, b) => a / b;
-console.log(arrowValues4(6, 3));
+let arrowValues4 = (a, b) => a % b;
+console.log(arrowValues4(5, 3));
+//-----------------------//
